@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flatdango</title>
+    <title>Movie Ticket App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1 id="page-title">Movie Menu</h1>
-    <ul id="films"></ul>
-
+    <header>
+        <h1>Movie Ticket Booking</h1>
+    </header>
+    <main>
+        <section id="movies-list">
+            <h2>Available Movies</h2>
+            <ul id="films">
+                <li>Loading movies...</li>
+            </ul>
+        </section>
+        <section id="movie-details">
+            <h2>Movie Details</h2>
+            <img id="poster" src="https://via.placeholder.com/150" alt="Movie Poster">
+            <div>
+                <p><strong>Title:</strong> <span id="title">N/A</span></p>
+                <p><strong>Runtime:</strong> <span id="runtime">N/A</span></p>
+                <p><strong>Showtime:</strong> <span id="showtime">N/A</span></p>
+                <p><strong>Tickets:</strong> <span id="tickets">N/A</span></p>
+                <button id="buy-ticket" disabled>Buy Ticket</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Movie Ticket App</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
